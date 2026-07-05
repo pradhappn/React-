@@ -19,7 +19,10 @@ function Login() {
       alert("Login Success");
       navigate("/dashboard");
     } catch (err) {
-      alert(err.response?.data?.message || "Login failed. Please try again.");
+      console.error("Login error:", err);
+      const message =
+        err.response?.data?.message || err.message || "Login failed. Please try again.";
+      alert(message);
     }
   };
 
