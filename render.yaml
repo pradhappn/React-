@@ -5,3 +5,10 @@ services:
     buildCommand: npm run build
     startCommand: npm start
     autoDeploy: true
+
+  - type: web
+    name: loan-backend
+    env: node
+    buildCommand: cd Backend && npm install
+    startCommand: cd Backend && npm start
+    autoDeploy: true
