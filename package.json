@@ -3,6 +3,6 @@
   "private": true,
   "scripts": {
     "build": "npm install --prefix \"Loan Application\" && npm run build --prefix \"Loan Application\"",
-    "start": "npm run dev --prefix \"Loan Application\" -- --host 0.0.0.0 --port 3000"
+    "start": "node scripts/start-render.mjs"
   }
 }

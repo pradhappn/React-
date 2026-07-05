@@ -1,10 +1,7 @@
 services:
   - type: web
     name: loan-application
-    env: static
+    env: node
     buildCommand: npm run build
-    staticPublishPath: Loan Application/dist
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+    startCommand: npm start
+    autoDeploy: true
